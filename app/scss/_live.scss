@@ -1,0 +1,20 @@
+.live{
+    background: #151516;
+    padding: 2.5rem;
+    &__border{
+        border: .25rem solid #1ce783;
+        border-radius: 16px;
+        padding: 6.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    a{
+        text-transform: uppercase;
+        font-size: 1.125rem;
+        margin-top: 1.25rem;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,56 @@
+.banner{
+
+    display:grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    gap: 2.5rem;
+    align-items: center;
+    padding: 1.875rem 2.5rem;
+    background: linear-gradient(
+        318.68deg,
+        #0f495c 0%,
+        #0d3640 49.72%,
+        #08141f 100%
+    );
+    img{
+        @include breakpoint-down(medium){
+            width: 18.75rem;
+            margin: auto ;
+        }
+    }
+    @include breakpoint-down(medium){
+        grid-template-columns: 1fr;
+        gap: 2.25rem;
+        text-align: center;
+    }
+    h3{
+        font-size: 26px;
+        font-weight: 300;
+    }
+    h4{
+        color: #00ed82;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+    &__link{
+        display: block;
+        color: #ccc;
+        font-size: .75rem;
+        text-decoration: underline;
+    }
+    &__cta{
+        justify-self: end;
+        align-self: end;
+        .banner__link{
+            text-align: center;
+        }
+        @include breakpoint-down(medium){
+            justify-self: center;
+            align-self: center;
+        }
+    }
+    .btn__outline{
+        margin-bottom: .3125rem;
+    }
+    
+
+}

@@ -1,0 +1,39 @@
+.sport{
+    position: relative;
+    background: url("/images/live-sports.jpg")no-repeat center center / cover;
+    height: 50rem;
+    @include breakpoint-down(small){
+        background: url('/images/live-sports-small.jpg') no-repeat center center /
+        cover;
+    }
+
+    &__content{
+        position: absolute;
+        top: 10rem;
+        left: 6.25rem;
+        max-width: 34.375rem;
+        @include breakpoint-down(medium){
+            top: 1.875rem;
+            left: 1.875rem;
+            margin-top: 3.75rem;
+        }
+    }
+    &__logos{
+        width: 18.75rem;
+        margin-top: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &--avatar{
+            background: url("/images/network-logo-bg.png") no-repeat center center / cover;
+            height: 3.75rem;
+            width: 3.75rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 2.5rem;
+            }
+        }
+    }
+}
